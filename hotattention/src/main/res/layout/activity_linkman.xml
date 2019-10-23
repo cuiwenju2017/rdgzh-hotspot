@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_back_title" />
+
+    <com.shanjing.hotattention.view.ClearTextEditText
+        android:id="@+id/et_topic"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_et_bg_gary"
+        android:drawableLeft="@drawable/icon_search"
+        android:gravity="center_vertical"
+        android:hint="搜索"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.12"
+        android:background="@color/black" />
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/color_5d96cb"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabSelectedTextColor="@color/color_5d96cb"
+        app:xTabSelectedTextSize="18sp"
+        app:xTabTextColor="#333333"
+        app:xTabTextSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.12"
+        android:background="@color/black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

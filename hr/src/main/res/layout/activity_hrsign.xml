@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/hr_white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:background="@drawable/icon_hr_back" />
+        </RelativeLayout>
+
+        <com.shanjing.hr.view.ClearTextEditText
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_et_bg_gary"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_hr_moreoption" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FAFAFA"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="#FB1137"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabSelectedTextColor="#FB1137"
+        app:xTabTextColor="@color/color_text"
+        app:xTabTextSize="14sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

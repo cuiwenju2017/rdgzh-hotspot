@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/ic"
+        layout="@layout/include_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/HR_TabRadioButton"
+            android:drawableTop="@drawable/tab_hr_home_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_mall"
+            style="@style/HR_TabRadioButton"
+            android:drawableTop="@drawable/tab_hr_cart_selector" />
+
+        <View style="@style/Custom.TabRadioButton" />
+
+        <RadioButton
+            android:id="@+id/rb_video"
+            style="@style/HR_TabRadioButton"
+            android:drawableTop="@drawable/tab_hr_video_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/HR_TabRadioButton"
+            android:drawableTop="@drawable/tab_hr_my_selector" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_sign"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/icon_publish_def" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg"
+        android:layout_below="@id/ic" />
+</RelativeLayout>
+
+
+

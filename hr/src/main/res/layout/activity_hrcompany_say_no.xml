@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hr_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_hr_title_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打招呼语"
+                android:textColor="@color/color_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="选中的打招呼语将在下次与对方沟通时生效"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:alpha="0.12"
+        android:background="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_hr_my_rb"
+            android:drawablePadding="10dp"
+            android:text="抱歉，看了你的简历，不符合我们的岗位要求。"
+            android:textColor="@color/color_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_hr_my_rb"
+            android:drawablePadding="10dp"
+            android:text="你的经验太少，不能胜任该职位。"
+            android:textColor="@color/color_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_hr_my_rb"
+            android:drawablePadding="10dp"
+            android:text="不好意思，你的学历不合适。"
+            android:textColor="@color/color_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_hr_my_rb"
+            android:drawablePadding="10dp"
+            android:text="抱歉，你的薪资要求过高，我们无法接受。"
+            android:textColor="@color/color_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_hr_my_rb"
+            android:drawablePadding="10dp"
+            android:text="仔细看了你的简历，你的工作经验与我们需要招聘 的岗位要求不匹配。"
+            android:textColor="@color/color_text"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bnt_custom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="72dp"
+        android:background="#F3F3F3"
+        android:text="自定义"
+        android:textColor="@color/color_text"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hr_white">#ffffff</color>
+    <color name="color_text">#333333</color>
+    <color name="color_pink">#F6164B</color>
+    <color name="color_hr_white">#F5F5F5</color>
+    <color name="color_hr_blue">#5D96CB</color>
+    <color name="color_hr_red">#FF0000</color>
+    <color name="white_light">#33ffffff</color>
+    <color name="white_trans_80">#CCFFFFFF</color>
+    <color name="black_45_trans40">#66313133</color>
+    <color name="pc_black_t_pic">#22000000</color>
+</resources>

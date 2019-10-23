@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hr_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_hr_title_name" />
+
+    <ImageView
+        android:id="@+id/iv_business"
+        android:layout_width="176dp"
+        android:layout_height="262dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_upload_hrbusiness"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_tv_pink"
+        android:gravity="center"
+        android:text="上传营业执照"
+        android:textColor="@color/color_pink" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="15dp"
+        android:text="声明:\n为保障求职者和招聘方以及本平台的利益，根据国家相关法律法规，企业进行互联网招聘需进行营业执照认证。企业在上传营业执照的时，打上“仅供认证使用”或” 仅供招聘使用”的水印即可，请保证图片的清晰度,谢谢配合。"
+        android:textSize="12sp" />
+</LinearLayout>

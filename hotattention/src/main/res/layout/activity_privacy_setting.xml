@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_back_title2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="评论公开程度"
+        android:textColor="@color/color_text" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp">
+
+        <RadioButton
+            android:id="@+id/rb_open"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:paddingLeft="20dp"
+            android:text="\t\t公开" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:paddingLeft="20dp"
+            android:text="\t\t仅主人可见" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:paddingLeft="20dp"
+            android:text="\t\t仅自己可见" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_some_open"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:paddingLeft="20dp"
+            android:text="\t\t仅部分人可见" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:paddingLeft="20dp"
+            android:text="\t\t仅部分人不可见" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="评论存在时长"
+        android:textColor="@color/color_text" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp">
+
+        <RadioButton
+            android:id="@+id/rb_perpetual"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:paddingLeft="20dp"
+            android:text="\t\t永久" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:paddingLeft="20dp"
+            android:text="\t\t8小时" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:paddingLeft="20dp"
+            android:text="\t\t24小时" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/cb_selector"
+            android:paddingLeft="20dp"
+            android:text="\t\t48小时" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.12"
+            android:background="@color/black" />
+    </RadioGroup>
+</LinearLayout>

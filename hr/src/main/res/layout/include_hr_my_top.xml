@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/hr_white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_thdings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_hr_tidings"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@drawable/selector_hr_my_tv" />
+
+        <RadioButton
+            android:id="@+id/rb_management"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_hr_management"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="管理"
+            android:textColor="@drawable/selector_hr_my_tv" />
+
+        <RadioButton
+            android:id="@+id/rb_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_hr_friend"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="好友"
+            android:textColor="@drawable/selector_hr_my_tv" />
+
+        <RadioButton
+            android:id="@+id/rb_concern"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_hr_concern"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@drawable/selector_hr_my_tv" />
+
+        <RadioButton
+            android:id="@+id/rb_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_hr_data"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="数据"
+            android:textColor="@drawable/selector_hr_my_tv" />
+
+        <RadioButton
+            android:id="@+id/rb_wallet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_hr_wallet"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="钱包"
+            android:textColor="@drawable/selector_hr_my_tv" />
+    </RadioGroup>
+</LinearLayout>

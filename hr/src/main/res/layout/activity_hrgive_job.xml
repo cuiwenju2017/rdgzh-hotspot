@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hr_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_hr_title_name2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_head"
+                    android:layout_width="45dp"
+                    android:layout_height="55dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/head" />
+
+                    <ImageView
+                        android:id="@+id/iv_add_friend"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_plus" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="陈经理"
+                        android:textColor="@color/color_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="杭州华元宠物用品有限公司"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="湖北牛富软件有限公司成立于2017年5月25日，公司将积极探索全新的“智能投顾“+”在线投顾“的模式，从传统投顾转型智能投顾，坚定不移地走科技发展的道路，积极利用金融科技最新的研究成果，不断提升服务品质与创新能力，不断开发高速而稳定的量化系统、服务系统"
+                        android:textColor="@color/color_text"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="81dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/head" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="81dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/head" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="职位要求"
+                        android:textColor="@color/color_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="招一人 | 本科 | 3-5年工作经验"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="薪资范畴"
+                        android:textColor="@color/color_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="5k-12k元/月"
+                        android:textColor="@color/color_pink"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="职位描述"
+                        android:textColor="@color/color_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1、三年以上Android开发经验，有C/C+/Java开发经验者优先；\n
+2、精通Java、Android Studio、Android SDK；\n
+3、精通Android SDK中的UI、网络、数据库、XML/JSON解析等开发技巧；\n
+4、深刻理解Android平台架构、主要组成和工作模式；深刻理解常用设计模式\n
+5、对Android内存管理，多线程，数据存储，性能调优优较深理解\n
+6、有多个完整的Android项目经验，至少参加过一个完整的商业级手机应用；\n
+7、熟悉各种主流手机特性，深刻理解手机客户端软件及服务端开发特点；\n
+8、精通常用软件架构模式，熟悉各种算法与数据结构，多线程，网络编程（Socket、http/web service）等；\n
+9、熟悉跨平台开发，如weex，rn。有实战经验和前端开发（调试）经验者可加分\n
+10、个性乐观开朗，逻辑思维强，善于团队合作\n
+11、有SDK开发经验优先，互联网金融证券行业优先。"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="29dp"
+                        android:text="公司信息"
+                        android:textColor="@color/color_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="杭州华元宠物用品有限公司"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:background="@drawable/icon_hr_telephone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="center"
+                            android:text="0571-8842-8848" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="9dp"
+                            android:layout_height="13dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/icon_hr_location" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="9dp"
+                            android:layout_weight="1"
+                            android:text="杭州余杭星一路西" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/icon_hr_in" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/icon_hr_video_communication" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/color_hr_white"
+            android:gravity="center"
+            android:text="邀请投递"
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#FB1137"
+            android:gravity="center"
+            android:text="立即沟通"
+            android:textColor="@color/hr_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

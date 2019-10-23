@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shanjing.hr">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".api.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.HROtherHomeActivity" />
+        <activity android:name=".activity.HRMyEditDataActivity" />
+        <activity android:name=".activity.HRMyHomeActivity" />
+        <activity android:name=".activity.HRHelpFeedbackActivity" />
+        <activity android:name=".activity.HRAboutActivity" />
+        <activity android:name=".activity.HRCompanySayNoActivity" />
+        <activity android:name=".activity.HRCompanySayHelloActivity" />
+        <activity android:name=".activity.HRCompanyInformRemindActivity" />
+        <activity android:name=".activity.HRJoinUsSettingActivity" />
+        <activity android:name=".activity.HRRecruitmentAssistantActivity" />
+        <activity android:name=".activity.HRCollectJobActivity" />
+        <activity android:name=".activity.HRCompanyAuthenticationActivity" />
+        <activity android:name=".activity.HRJobManageActivity" />
+        <activity android:name=".activity.HRReceivedResumeActivity" />
+        <activity android:name=".activity.HRCompanyInterviewActivity" />
+        <activity android:name=".activity.HRSayHelloActivity" />
+        <activity android:name=".activity.HRPrivacySettingsActivity" />
+        <activity android:name=".activity.HRInformRemindActivity" />
+        <activity android:name=".activity.HRAccountBindingActivity" />
+        <activity android:name=".activity.HRMYSettingActivity" />
+        <activity android:name=".activity.HRAttentionMyCompanyActivity" />
+        <activity android:name=".activity.HRJobAssistantActivity" />
+        <activity android:name=".activity.HRCollectActivity" />
+        <activity android:name=".activity.HRAlreadyHaveAResumeActivity" />
+        <activity android:name=".activity.HREditResumeActivity" />
+        <activity android:name=".activity.HRMyInterviewActivity" />
+        <activity android:name=".activity.HRProjectNameActivity" />
+        <activity android:name=".activity.HRAddProjectExperienceActivity" />
+        <activity android:name=".activity.HRProjectExperienceActivity" />
+        <activity android:name=".activity.HRSchoolExperienceActivity" />
+        <activity android:name=".activity.HRMajorActivity" />
+        <activity android:name=".activity.HRSchoolActivity" />
+        <activity android:name=".activity.HRAddEducationExperienceActivity" />
+        <activity android:name=".activity.HREducationExperienceActivity" />
+        <activity android:name=".activity.HRSkillsLabelActivity" />
+        <activity
+            android:name=".activity.HRJobPerformanceActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.HRJobContentActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activity.HRDepartmentActivity" />
+        <activity android:name=".activity.HRPositionTypeActivity" />
+        <activity android:name=".activity.HRAddOccupationalHistoryActivity" />
+        <activity android:name=".activity.HROccupationalHistoryActivity" />
+        <activity android:name=".activity.HRContactWayActivity" />
+        <activity android:name=".activity.HRNameActivity" />
+        <activity android:name=".activity.HRAddNewResumeActivity" />
+        <activity android:name=".activity.HRAttachmentResumeActivity" />
+        <activity android:name=".activity.HRDesiredIndustryActivity" />
+        <activity android:name=".activity.HRExpectedPositionActivity" />
+        <activity android:name=".activity.HRScaleActivity" />
+        <activity android:name=".activity.HRFinancingActivity" />
+        <activity android:name=".photoPicker.BigImagePagerActivity" />
+        <activity android:name=".photoPicker.ImgSelActivity" />
+        <activity android:name=".activity.HRBusinessLicenseActivity" />
+        <activity android:name=".activity.HRCompanyPhoneActivity" />
+        <activity android:name=".activity.HRAddCompanyAddressActivity" />
+        <activity android:name=".activity.HRCompanyAddressActivity" />
+        <activity android:name=".activity.HRAddressActivity" />
+        <activity android:name=".activity.HRJobAddressActivity" />
+        <activity android:name=".activity.HRCompanyNameActivity" />
+        <activity
+            android:name=".activity.HRJobDescriptionActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activity.HRCorporateInformationActivity" />
+        <activity android:name=".activity.HRVideoAccessoryActivity" />
+        <activity android:name=".activity.HRJobVacancyActivity" />
+        <activity android:name=".activity.HRChooseLinkmanActivity" />
+        <activity android:name=".activity.HRSignJurisdictionActivity" />
+        <activity android:name=".activity.HRLocationActivity" />
+        <activity android:name=".activity.HRSignActivity" />
+        <activity android:name=".activity.HRResumDetailsActivity" />
+        <activity android:name=".activity.HRGiveJobActivity" />
+        <activity android:name=".activity.JobWantedParticularsActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.ChooseCityActivity" />
+        <activity
+            android:name=".activity.HRHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.base.commonlib.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.shanjing.hr.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

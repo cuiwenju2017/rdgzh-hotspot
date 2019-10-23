@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shanjing.hotattention">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".api.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".photoPicker.ImgSelActivity" />
+        <activity android:name=".activity.LinkmanActivity" />
+        <activity android:name=".activity.TopicActivity" />
+        <activity android:name=".photoPicker.BigImagePagerActivity" />
+        <activity
+            android:name=".activity.IssueActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activity.QuestionsAndAnswersActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.OneCommentListActivity" />
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.PrivacySettingActivity" />
+        <activity android:name=".activity.SettingVideoActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.MyFeedbackActivity" />
+        <activity android:name=".activity.MyCollectActivity" />
+        <activity android:name=".activity.MyInterestActivity" />
+        <activity android:name=".activity.IReleaseActivity" />
+        <activity android:name=".activity.EditDataActivity" />
+        <activity
+            android:name=".activity.HotAttentionHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.base.commonlib.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.shanjing.hotattention.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
